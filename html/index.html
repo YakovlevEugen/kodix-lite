@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Captain Quack - Главная</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../skin/styles/foundation.css" media="screen">
+    <link rel="stylesheet" href="../skin/styles/app.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container index-page">
+      <header class="main-header">
+        <div class="layout-main">
+          <div class="main-header__inner">
+            <div class="main-header__logo">
+              <a href="/" class="header-logo">
+                <img src="../skin/images/logo.png" alt="Логотип Captain Quack"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-center">
+        <h1 class="ttl-base">¡Ay caramba!</h1>
+        <form class="main-filter filter-form" action="" method="POST">
+          <div class="layout-main-tablet">
+            <div class="form-base">
+              <div class="form-base__row">
+                <div class="form-base__field">
+                  <label class="inp-base">
+                    <input type="text" name="name" class="inp-base__field js-inputField" required>
+                    <span class="inp-base__lbl">Название</span>
+                  </label>
+                </div>
+
+                <div class="form-base__row form-base__row_2col">
+                  <div class="form-base__field">
+                    <label class="inp-base">
+                      <input type="text" name="year" class="inp-base__field js-inputField js-numInput" required>
+                      <span class="inp-base__lbl">Год</span>
+                    </label>
+                  </div>
+
+                  <div class="form-base__field">
+                    <label class="inp-base">
+                      <input type="text" name="price" class="inp-base__field js-inputField js-priceMask" required>
+                      <span class="inp-base__lbl">Цена</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-base__row">
+                <div class="form-base__field">
+                  <label class="inp-base">
+                    <input type="text" name="description" class="inp-base__field js-inputField" required>
+                    <span class="inp-base__lbl">Описание</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-base__row">
+                <div class="form-base__field">
+                  <div class="color-filter">
+                    <div class="color-filter__ttl">Цвет</div>
+                    <div class="color-filter__list">
+                      <div class="color-filter__item">
+                        <label class="color-switch">
+                          <input type="radio" name="color" class="color-switch__inp" value="white" required>
+                          <span class="color-switch__el color-switch__el_border" style="background-color: white;"></span>
+                        </label>
+                      </div>
+                      <div class="color-filter__item">
+                        <label class="color-switch">
+                          <input type="radio" name="color" class="color-switch__inp" value="black">
+                          <span class="color-switch__el" style="background-color: black;"></span>
+                        </label>
+                      </div>
+                      <div class="color-filter__item">
+                        <label class="color-switch">
+                          <input type="radio" name="color" class="color-switch__inp" value="gray" checked>
+                          <span class="color-switch__el" style="background-color: #cbcbcc;"></span>
+                        </label>
+                      </div>
+                      <div class="color-filter__item">
+                        <label class="color-switch">
+                          <input type="radio" name="color" class="color-switch__inp" value="pink">
+                          <span class="color-switch__el" style="background-color: #d74345;"></span>
+                        </label>
+                      </div>
+                      <div class="color-filter__item">
+                        <label class="color-switch">
+                          <input type="radio" name="color" class="color-switch__inp" value="acid">
+                          <span class="color-switch__el" style="background-color: #88c504;"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-base__row form-base__row_2col">
+                  <div class="form-base__field">
+                    <select name="status" class="select-base" required>
+                      <option value="">Статус</option>
+                      <option value="in-stock">В наличии</option>
+                      <option value="pending">Ожидается</option>
+                      <option value="out-of-stock">Нет в наличии</option>
+                    </select>
+                  </div>
+
+                  <div class="form-base__field">
+                    <button class="btn btn_primary btn_full-width" href="#">
+                      <span>Отправить</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="12px" style="fill: currentColor;">
+                        <g>
+                          <polygon points="8,6 8,5.8 2.2,0 0,2.1 3.9,6 6,6 	"/>
+                          <polygon points="5.9,6 3.9,6 0,9.8 2.2,12 8,6.2 8,6 	"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="main-car-table">
+          <div class="subttl-base tablet-hide">Автомобили в наличии</div>
+            <div class="car-table">
+              Нет данных
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- .main-center -->
+
+      <footer class="main-footer">
+        <div class="layout-main">
+          <div class="copyright">
+            © 2018 CAPTAIN QUACK<br>Десница тысячелетия и моллюск!
+          </div>
+        </div>
+      </footer>
+
+      <a href="#" class="js-goUp go-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" style="transform: rotate(-90deg); fill: currentColor;">
+          <path d="M8.196,30c-0.462,0-0.877-0.169-1.2-0.488C6.676,29.2,6.501,28.784,6.5,28.34c0-0.445,0.176-0.863,0.496-1.177l12.41-12.171
+          L6.996,2.82C6.676,2.507,6.5,2.09,6.5,1.645S6.676,0.783,6.996,0.47C7.3,0.171,7.738,0,8.196,0c0.458,0,0.896,0.171,1.2,0.47
+          l13.608,13.347c0.319,0.313,0.495,0.73,0.495,1.174c0,0.444-0.176,0.862-0.495,1.176L9.396,29.513C9.072,29.831,8.657,30,8.196,30z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- .main-container -->
+
+    <script src="../skin/js/foundation.js"></script>
+    <script src="../skin/js/app.js"></script>
+  </body>
+</html>
